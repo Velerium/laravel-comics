@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;
+
+700&display=swap);.header .headerUpper {
+  background-color: #0282f9;
+  height: 20px;
+  color: #fff;
+}
+
+.header .headerUpper .headerUpperContainer {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header .headerUpper .headerUpperContainer ul {
+  list-style-type: none;
+}
+
+.header .headerUpper .headerUpperContainer ul li {
+  display: inline-block;
+  margin-left: 40px;
+  font-size: 12px;
+}
+
+.header .headerLower {
+  width: 70%;
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header .headerLower img {
+  width: 40px;
+}
+
+.header .headerLower ul {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.header .headerLower ul li {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.header .headerLower .search {
+  border-bottom: 2px solid #0282f9;
+}
+
+.header .headerLower .search .searchBar {
+  text-align: right;
+  width: 80px;
+  border: none;
+}
+
+.header .headerLower .search .searchBar i {
+  margin-left: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+

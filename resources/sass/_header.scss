@@ -1,0 +1,64 @@
+
+.header{
+
+    .headerUpper {
+        background-color: $main-color;
+        height: 20px;
+        color: #fff;
+
+        .headerUpperContainer {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+
+            ul {
+                list-style-type: none;
+
+                li {
+                    display: inline-block;
+                    margin-left: 40px;
+                    font-size: $small-font;
+                }
+            }
+        }
+    }
+
+    .headerLower{
+        width: 70%;
+        margin: 0 auto;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        img {
+            width: 40px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-right: 20px;
+
+            li {
+                display: inline-block;
+                margin-left: 20px;
+                font-size: $small-mid-font;
+            }
+        }
+
+        .search {
+            border-bottom: 2px solid #0282f9;
+        
+            .searchBar {
+                text-align: right;
+                width: 80px;
+                border: none;
+
+                i {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
