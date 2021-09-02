@@ -1,0 +1,115 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+
+    .bg-image {
+        background-image: url('../../public/images/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 370px;
+
+        .footerContainer {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            height: 100%;
+            color: $text-color-footer;
+        
+            .leftSide {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .links {
+                    display: flex;
+
+                    ul {
+                        text-align: left;
+                        margin-right: 30px;
+
+                        li {
+                            list-style: none;
+                            margin-bottom: 5px;
+                            font-size: $small-font;
+
+                            &:hover {
+                                color: #fff;
+                                cursor: pointer;
+                            }
+
+                            &:first-child {
+                                color: $text-color;
+                                font-size: 22px;
+                                font-weight: bold;
+                                margin: 18px 0;
+                            }
+                        }
+                        
+                    }
+                }
+
+                .license {
+                    font-size: $smaller-font;
+                    margin-bottom: 10px;
+
+                    a {
+                        text-decoration: none;
+                        color: $main-color;
+                    }
+                }
+            }
+        
+
+            .bg-logo {
+                background-image: url('../../public/images/dc-logo-bg.png');
+                background-size: 95%;
+                width: 50%;
+                background-position-y: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    .bg-color {
+        background-color: $bottom-color;
+        height: 74px;
+        display: flex;
+        align-items: center;
+
+        .lowerFooterContainer {
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            margin: 0 auto;
+
+            .button-bottom {
+                padding: 10px 15px;
+                color: $text-color;
+                border: 2px solid $main-color;
+            }
+
+            .social-links {
+                display: flex;
+                align-items: center;
+
+                span {
+                    color: $main-color;
+                    font-size: 18px;
+                    margin-right: 20px;
+                    font-weight: bold;
+                }
+
+                img {
+                    margin-right: 10px;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

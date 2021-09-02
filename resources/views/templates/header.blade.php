@@ -8,22 +8,26 @@
         </div>
     </div>
     <div class="headerLower">
-        <img src="./img/dc-logo.png" alt="">
-        <ul>
-            <li>CHARACTERS</li>
-            <li>COMICS</li>
-            <li>MOVIES</li>
-            <li>TV</li>
-            <li>GAMES</li>
-            <li>COLLECTIBLES</li>
-            <li>VIDEOS</li>
-            <li>FANS</li>
-            <li>NEWS</li>
-            <li>SHOP</li>
-        </ul>
+        <img src="./images/dc-logo.png" alt="">
+        <nav>
+            <ul>
+                <li>CHARACTERS</li>
+                <li class="selected">COMICS</li>
+                <li>MOVIES</li>
+                <li>TV</li>
+                <li>GAMES</li>
+                <li>COLLECTIBLES</li>
+                <li>VIDEOS</li>
+                <li>FANS</li>
+                <li>NEWS</li>
+                <li>SHOP</li>
+            </ul>
+        </nav>
         <div class="search">
             <input type='text' placeholder="Search" class="searchBar">
             <i class="fas fa-search"></i>
         </div>
     </div>
+    <div class="jumbotron"></div>
+
 </div>

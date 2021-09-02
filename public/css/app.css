@@ -2,15 +2,17 @@
 
 700&display=swap);.header .headerUpper {
   background-color: #0282f9;
-  height: 20px;
+  height: 25px;
   color: #fff;
 }
 
 .header .headerUpper .headerUpperContainer {
   width: 70%;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .header .headerUpper .headerUpperContainer ul {
@@ -26,39 +28,181 @@
 .header .headerLower {
   width: 70%;
   margin: 0 auto;
-  height: 50px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  font-weight: bold;
 }
 
 .header .headerLower img {
-  width: 40px;
+  width: 70px;
 }
 
-.header .headerLower ul {
+.header .headerLower nav {
+  height: 100%;
+}
+
+.header .headerLower nav ul {
+  height: 100%;
   list-style-type: none;
   margin-right: 20px;
 }
 
-.header .headerLower ul li {
+.header .headerLower nav ul li {
+  height: 100%;
+  line-height: 100px;
   display: inline-block;
   margin-left: 20px;
   font-size: 14px;
 }
 
+.header .headerLower nav ul li.selected {
+  color: #0282f9;
+  border-bottom: 2px solid #0282f9;
+}
+
 .header .headerLower .search {
   border-bottom: 2px solid #0282f9;
+  padding: 5px;
 }
 
 .header .headerLower .search .searchBar {
   text-align: right;
-  width: 80px;
+  width: 100px;
   border: none;
+  padding-right: 10px;
 }
 
 .header .headerLower .search .searchBar i {
   margin-left: 10px;
+}
+
+.header .jumbotron {
+  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  height: 400px;
+  background-size: cover;
+}
+
+.mainContainer {
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .bg-image {
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 370px;
+}
+
+.footer .bg-image .footerContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  height: 100%;
+  color: #888;
+}
+
+.footer .bg-image .footerContainer .leftSide {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer .bg-image .footerContainer .leftSide .links {
+  display: flex;
+}
+
+.footer .bg-image .footerContainer .leftSide .links ul {
+  text-align: left;
+  margin-right: 30px;
+}
+
+.footer .bg-image .footerContainer .leftSide .links ul li {
+  list-style: none;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.footer .bg-image .footerContainer .leftSide .links ul li:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer .bg-image .footerContainer .leftSide .links ul li:first-child {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 18px 0;
+}
+
+.footer .bg-image .footerContainer .leftSide .license {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.footer .bg-image .footerContainer .leftSide .license a {
+  text-decoration: none;
+  color: #0282f9;
+}
+
+.footer .bg-image .footerContainer .bg-logo {
+  background-image: url(/images/dc-logo-bg.png?f4404ce9dc132a08a47f19e3f73f1417);
+  background-size: 95%;
+  width: 50%;
+  background-position-y: center;
+  background-repeat: no-repeat;
+}
+
+.footer .bg-color {
+  background-color: #303030;
+  height: 74px;
+  display: flex;
+  align-items: center;
+}
+
+.footer .bg-color .lowerFooterContainer {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+.footer .bg-color .lowerFooterContainer .button-bottom {
+  padding: 10px 15px;
+  color: #fff;
+  border: 2px solid #0282f9;
+}
+
+.footer .bg-color .lowerFooterContainer .social-links {
+  display: flex;
+  align-items: center;
+}
+
+.footer .bg-color .lowerFooterContainer .social-links span {
+  color: #0282f9;
+  font-size: 18px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.footer .bg-color .lowerFooterContainer .social-links img {
+  margin-right: 10px;
+  height: 100%;
 }
 
 * {
