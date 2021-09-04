@@ -78,7 +78,6 @@
   display: flex;
   width: 70%;
   margin: 0 auto;
-  height: 800px;
   padding: 30px 10px;
   position: relative;
   flex-wrap: wrap;
@@ -99,6 +98,11 @@
   color: #fff;
   font-size: 14px;
   padding: 0 10px;
+  margin-bottom: 90px;
+}
+.mainContainerFluid .mainContainer .comicItem a {
+  color: #fff;
+  text-decoration: none;
 }
 .mainContainerFluid .mainContainer .comicItemPic {
   height: 200px;
@@ -115,6 +119,7 @@
   border: none;
   color: #fff;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .options {
@@ -240,6 +245,106 @@
 .footer .bg-color .lowerFooterContainer .social-links img {
   margin-right: 10px;
   height: 100%;
+}
+
+.productContainer {
+  width: 55%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.containerFluidProductTop {
+  background-color: #0282f9;
+  height: 60px;
+}
+.containerFluidProductTop .whatsThisProduct {
+  position: absolute;
+  top: -250px;
+  left: 0;
+  border: 1px solid #fff;
+}
+.containerFluidProductTop .whatsThisProduct .imgContainer {
+  position: relative;
+}
+.containerFluidProductTop .whatsThisProduct .imgContainer div {
+  position: absolute;
+  font-size: 12px;
+  background-color: #00a9d9;
+  color: #fff;
+  padding: 3px 7px;
+}
+.containerFluidProductTop .whatsThisProduct .imgContainer div:nth-child(2) {
+  top: 0;
+  left: 0;
+}
+.containerFluidProductTop .whatsThisProduct .imgContainer div:nth-child(3) {
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+.containerFluidProductMid {
+  background-color: #fff;
+  padding: 40px 0;
+  height: 400px;
+}
+.containerFluidProductMid .productInfo {
+  width: 68%;
+}
+.containerFluidProductMid .productInfo h1 {
+  color: #003f5e;
+  margin-bottom: 20px;
+}
+.containerFluidProductMid .productInfo .priceInfo {
+  background-color: #55ba59;
+  color: #b0f78e;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.containerFluidProductMid .productInfo .priceInfo .price {
+  justify-content: space-between;
+  width: 75%;
+  border-right: 1px solid #4aa34e;
+}
+.containerFluidProductMid .productInfo .priceInfo .price .pricePadding {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 20px;
+}
+.containerFluidProductMid .productInfo .priceInfo .price .pricePadding .lighter {
+  color: #fff;
+}
+.containerFluidProductMid .productInfo .priceInfo .availableCheck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border: none;
+  width: 25%;
+  background-color: #55ba59;
+  color: #fff;
+}
+.containerFluidProductMid .productInfo .priceInfo .availableCheck span {
+  position: relative;
+  top: -1px;
+}
+.containerFluidProductMid .productInfo .productDescription {
+  font-size: 14px;
+  line-height: 25px;
+  width: 100%;
+}
+.containerFluidProductMid .ad {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 14px;
+  text-align: right;
 }
 
 * {

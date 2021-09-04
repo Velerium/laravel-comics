@@ -18,3 +18,14 @@ Route::get('/', function () {
         'comics' => config('comics')
     ]);
 })->name('homepage');
+
+
+Route::get('/product/{id}', function($id) {
+
+    $comicPosition = $id - 1;
+
+    return view('product', [
+        'comics' => config('comics'),
+        'comicPosition' => $comicPosition
+    ]);
+})->name('product');

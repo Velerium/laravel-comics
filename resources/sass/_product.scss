@@ -1,0 +1,115 @@
+.productContainer {
+    width: 55%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerFluidProductTop{
+    background-color: $main-color;
+    height: 60px;
+
+    .whatsThisProduct {
+        position: absolute;
+        top: -250px;
+        left: 0;
+        border: 1px solid #fff;
+
+        .imgContainer {
+            position: relative;
+
+            div {
+                position: absolute;
+                font-size: $small-font;
+                background-color: #00a9d9;
+                color: $text-color;
+                padding: 3px 7px;
+            }
+                
+            div:nth-child(2) {
+                top: 0;
+                left: 0;
+            }
+
+            div:nth-child(3) {
+                width: 100%;
+                bottom: 0;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.containerFluidProductMid {
+    background-color: #fff;
+    padding: 40px 0;
+    height: 400px; //remove!!
+
+    .productInfo {
+
+        width: 68%;
+        
+        h1 {
+            color: #003f5e;
+            margin-bottom: 20px;
+        }
+
+        .priceInfo {
+            background-color: #55ba59;
+            color: #b0f78e;
+            font-size: $small-mid-font;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 20px;
+
+            .price {
+                justify-content: space-between;
+                width: 75%;
+                border-right: 1px solid #4aa34e;
+
+                .pricePadding {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    padding: 10px 20px;
+
+                    .lighter {
+                        color: $text-color;
+                    }
+                }
+            }
+
+            .availableCheck {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                border: none;
+                width: 25%;
+                background-color: #55ba59;
+                color: $text-color;
+
+                span {
+                    position: relative;
+                    top: -1px; // I SWEAR YOU COULD SEE IT NOT BEING ALIGNED AND IT DROVE ME CRAZY.
+                }
+            }
+        }
+
+        .productDescription {
+            font-size: $small-mid-font;
+            line-height: 25px;
+            width: 100%;
+        }
+    }
+
+    .ad {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: $small-mid-font;
+        text-align: right;
+    }
+}

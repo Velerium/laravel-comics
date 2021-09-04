@@ -7,7 +7,6 @@
         display: flex;
         width: 70%;
         margin: 0 auto;
-        height: 800px; //todo: remove!
         padding: 30px 10px;
         position: relative;
         flex-wrap: wrap;
@@ -29,6 +28,12 @@
             color: $text-color;
             font-size: $small-mid-font;
             padding: 0 10px;
+            margin-bottom: 90px;
+
+            a {
+                color: $text-color;
+                text-decoration: none;
+            }
 
             &Pic {
                 height: 200px;
@@ -48,6 +53,7 @@
             border: none;
             color: $text-color;
             margin: 0 auto;
+            cursor: pointer;
         }
     }
 }

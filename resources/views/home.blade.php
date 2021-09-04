@@ -6,12 +6,12 @@
             <div class="whatsThis">Current Series</div>
             @foreach ($comics as $comic)
             <div class="comicItem">
-                
+                <a href="{{ route('product', ['id' => $loop->iteration]) }}">
                     <div class="comicItemPic">
                         <img src="{{ $comic['thumb'] }}">
                     </div>
                     <div>@php echo strtoupper($comic['series']) @endphp</div>
-                
+                </a>
             </div>
             @endforeach
 
