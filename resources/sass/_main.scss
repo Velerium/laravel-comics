@@ -1,6 +1,89 @@
-.mainContainer {
-    height: 800px;
+.mainContainerFluid {
     display: flex;
     justify-content: center;
+    background-color: #1c1c1c;
+
+    .mainContainer {
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+        height: 800px; //todo: remove!
+        padding: 30px 10px;
+        position: relative;
+        flex-wrap: wrap;
+
+        .whatsThis {
+            position: absolute;
+            left: 0;
+            top: -20px;
+            color: $text-color;
+            background-color: $main-color;
+            padding: 5px 20px;
+            font-weight: 700;
+            font-size: $mid-large-font;
+        }
+
+        .comicItem {
+            width: calc(100%/6);
+            height: 200px;
+            color: $text-color;
+            font-size: $small-mid-font;
+            padding: 0 10px;
+
+            &Pic {
+                height: 200px;
+                margin-bottom: 15px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .more {
+            width: (100%/6);
+            background-color: $main-color;
+            height: 40px;
+            border: none;
+            color: $text-color;
+            margin: 0 auto;
+        }
+    }
+}
+
+.options {
+    background-color: $main-color;
+    display: flex;
     align-items: center;
+    padding: 50px 0;
+
+    .blueContainer {
+        justify-content: space-around;
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+
+        div {
+            width: 18%;
+            font-size: $small-font;
+
+            &:last-child {
+                
+                img {
+                    width: 30%;
+                }
+            }
+
+            span {
+                margin-left: 15px;
+                color: $text-color;
+            }
+
+            img {
+                height: 60px;
+                vertical-align: middle;
+            }
+        }
+    }
 }

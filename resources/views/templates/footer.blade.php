@@ -70,23 +70,23 @@
             <div class="social-links">
                 <span>FOLLOW US</span>
                 <div>
-                    <img src="./images/footer-facebook.png" alt="">
+                    <img src="/images/footer-facebook.png" alt="">
                 </div>
                 
                 <div>
-                    <img src="./images/footer-twitter.png" alt="">
+                    <img src="/images/footer-twitter.png" alt="">
                 </div>
 
                 <div>
-                    <img src="./images/footer-youtube.png" alt="">
+                    <img src="/images/footer-youtube.png" alt="">
                 </div>
 
                 <div>
-                    <img src="./images/footer-pinterest.png" alt="">
+                    <img src="/images/footer-pinterest.png" alt="">
                 </div>
 
                 <div>
-                    <img src="./images/footer-periscope.png" alt="">
+                    <img src="/images/footer-periscope.png" alt="">
                 </div>
             </div>
 

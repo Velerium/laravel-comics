@@ -3,7 +3,7 @@
     flex-direction: column;
 
     .bg-image {
-        background-image: url('../../public/images/footer-bg.jpg');
+        background-image: url('/images/footer-bg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
@@ -65,7 +65,7 @@
         
 
             .bg-logo {
-                background-image: url('../../public/images/dc-logo-bg.png');
+                background-image: url('/images/dc-logo-bg.png');
                 background-size: 95%;
                 width: 50%;
                 background-position-y: center;

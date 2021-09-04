@@ -57,13 +57,13 @@
 
                 li.selected {
                     color: $main-color;
-                    border-bottom: 2px solid $main-color;
+                    border-bottom: 5px solid $main-color;
                 }
             }
         } 
 
         .search {
-            border-bottom: 5px solid $main-color;
+            border-bottom: 3px solid $main-color;
             padding: 5px;
         
             .searchBar {
@@ -80,7 +80,7 @@
     }
 
     .jumbotron {
-        background-image: url('../../public/images/jumbotron.jpg');
+        background-image: url('/images/jumbotron.jpg');
         height: 400px;
         background-size: cover;
     }
