@@ -8,11 +8,11 @@
         </div>
     </div>
     <div class="headerLower">
-        <img src="./images/dc-logo.png" alt="">
+        <img src="../images/dc-logo.png" alt="">
         <nav>
             <ul>
                 <li>CHARACTERS</li>
-                <li class="selected">COMICS</li>
+                <li class="selected"><a href="{{ route('homepage')}}">COMICS</a></li>
                 <li>MOVIES</li>
                 <li>TV</li>
                 <li>GAMES</li>

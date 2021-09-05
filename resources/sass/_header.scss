@@ -21,6 +21,7 @@
                     display: inline-block;
                     margin-left: 40px;
                     font-size: $small-font;
+                    
                 }
             }
         }
@@ -53,11 +54,19 @@
                     display: inline-block;
                     margin-left: 20px;
                     font-size: $small-mid-font;
+
+                    a {
+                        color: black;
+                        text-decoration: none;
+                    }
                 }
 
                 li.selected {
-                    color: $main-color;
                     border-bottom: 5px solid $main-color;
+
+                    a {
+                        color: $main-color;
+                    }
                 }
             }
         } 

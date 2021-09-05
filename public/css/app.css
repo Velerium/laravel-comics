@@ -46,9 +46,15 @@
   margin-left: 20px;
   font-size: 14px;
 }
+.header .headerLower nav ul li a {
+  color: black;
+  text-decoration: none;
+}
 .header .headerLower nav ul li.selected {
-  color: #0282f9;
   border-bottom: 5px solid #0282f9;
+}
+.header .headerLower nav ul li.selected a {
+  color: #0282f9;
 }
 .header .headerLower .search {
   border-bottom: 3px solid #0282f9;
@@ -248,7 +254,7 @@
 }
 
 .productContainer {
-  width: 55%;
+  width: 60%;
   margin: 0 auto;
   position: relative;
   display: flex;
@@ -287,8 +293,7 @@
 
 .containerFluidProductMid {
   background-color: #fff;
-  padding: 40px 0;
-  height: 400px;
+  padding: 80px 0;
 }
 .containerFluidProductMid .productInfo {
   width: 68%;
@@ -345,6 +350,89 @@
   justify-content: space-between;
   font-size: 14px;
   text-align: right;
+}
+
+.containerFluidProductBottom {
+  background-color: #f6f6f6;
+  padding: 30px 0 130px;
+  border-top: 1px solid #e6e6e6;
+  display: flex;
+  justify-content: space-between;
+}
+.containerFluidProductBottom .talents {
+  color: #003f5e;
+  width: calc(50% - 20px);
+  margin-right: 30px;
+}
+.containerFluidProductBottom .talents h2 {
+  margin-bottom: 30px;
+}
+.containerFluidProductBottom .talents .artists, .containerFluidProductBottom .talents .writers {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.containerFluidProductBottom .talents .artists h4, .containerFluidProductBottom .talents .writers h4 {
+  min-width: 180px;
+}
+.containerFluidProductBottom .talents .artists div, .containerFluidProductBottom .talents .writers div {
+  line-height: 16px;
+}
+.containerFluidProductBottom .talents .artists div a, .containerFluidProductBottom .talents .writers div a {
+  color: #39c8ea;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+.containerFluidProductBottom .talents .artists div a:after, .containerFluidProductBottom .talents .writers div a:after {
+  content: ",";
+  color: #aaa;
+}
+.containerFluidProductBottom .talents .artists div a:last-child:after, .containerFluidProductBottom .talents .writers div a:last-child:after {
+  content: "";
+}
+.containerFluidProductBottom .specs {
+  color: #003f5e;
+  width: calc(50% - 20px);
+}
+.containerFluidProductBottom .specs h2 {
+  margin-bottom: 30px;
+}
+.containerFluidProductBottom .specs .series, .containerFluidProductBottom .specs .specsPrice, .containerFluidProductBottom .specs .firstOnSale {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px 0;
+  display: flex;
+}
+.containerFluidProductBottom .specs .series h4, .containerFluidProductBottom .specs .specsPrice h4, .containerFluidProductBottom .specs .firstOnSale h4 {
+  min-width: 220px;
+}
+.containerFluidProductBottom .specs .series span, .containerFluidProductBottom .specs .specsPrice span, .containerFluidProductBottom .specs .firstOnSale span {
+  font-weight: 700;
+}
+.containerFluidProductBottom .specs .series a, .containerFluidProductBottom .specs .specsPrice a, .containerFluidProductBottom .specs .firstOnSale a {
+  color: #39c8ea;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.containerFluidLinks {
+  background-color: #f6f6f6;
+  height: 100px;
+  display: flex;
+  border-top: 1px solid #e6e6e6;
+}
+.containerFluidLinks .link {
+  flex-grow: 1;
+  padding: 15px;
+  color: #888;
+  border-right: 1px solid #e6e6e6;
+  font-weight: 700;
+}
+.containerFluidLinks .borderLeft {
+  border-left: 1px solid #e6e6e6;
 }
 
 * {

@@ -1,5 +1,5 @@
 .productContainer {
-    width: 55%;
+    width: 60%;
     margin: 0 auto;
     position: relative;
     display: flex;
@@ -43,15 +43,14 @@
 
 .containerFluidProductMid {
     background-color: #fff;
-    padding: 40px 0;
-    height: 400px; //remove!!
+    padding: 80px 0;
 
     .productInfo {
 
         width: 68%;
         
         h1 {
-            color: #003f5e;
+            color: $product-titles-color;
             margin-bottom: 20px;
         }
 
@@ -93,7 +92,7 @@
 
                 span {
                     position: relative;
-                    top: -1px; // I SWEAR YOU COULD SEE IT NOT BEING ALIGNED AND IT DROVE ME CRAZY.
+                    top: -1px; // I SWEAR YOU CAN SEE IT NOT BEING ALIGNED AND IT DRIVES ME CRAZY.
                 }
             }
         }
@@ -111,5 +110,108 @@
         justify-content: space-between;
         font-size: $small-mid-font;
         text-align: right;
+    }
+}
+
+.containerFluidProductBottom {
+    background-color: #f6f6f6;
+    padding: 30px 0 130px;
+    border-top: 1px solid #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+    
+    .talents {
+        color: $product-titles-color;
+        width: calc(50% - 20px);
+        margin-right: 30px;
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        .artists, .writers {
+            border-top: 1px solid #e6e6e6;
+            border-bottom: 1px solid #e6e6e6;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            
+            h4 {
+                min-width: 180px;
+            }
+
+            div {
+                line-height: 16px;
+
+                a {
+                    color: $link-color;
+                    text-decoration: none;
+                    font-size: $small-mid-font;
+                    font-weight: 700;
+
+                    &:after {
+                        content: ',';
+                        color: #aaa;
+                    }
+
+                    &:last-child {
+                        
+                        &:after {
+                            content: '';
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .specs {
+        color: $product-titles-color;
+        width: calc(50% - 20px);
+
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        .series, .specsPrice, .firstOnSale {
+            border-top: 1px solid #e6e6e6;
+            border-bottom: 1px solid #e6e6e6;
+            padding: 10px 0;
+            display: flex;
+            
+            h4 {
+                min-width: 220px;
+            }
+
+            span {
+                font-weight: 700;
+            }
+
+            a {
+                color: $link-color;
+                text-decoration: none;
+                font-size: $small-mid-font;
+            }
+        }
+    }
+}
+
+.containerFluidLinks {
+    background-color: #f6f6f6;
+    height: 100px; //images are missing, so placeholding with fixed height
+    display: flex;
+    border-top: 1px solid #e6e6e6;
+
+    .link {
+        flex-grow: 1;
+        padding: 15px;
+        color: $text-color-footer;
+        border-right: 1px solid #e6e6e6;
+        font-weight: 700;
+    }
+
+    .borderLeft {
+        border-left: 1px solid #e6e6e6;
     }
 }
